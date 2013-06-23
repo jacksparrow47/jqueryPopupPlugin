@@ -1,0 +1,145 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Popup Plugin</title>
+    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+    <script src="ModalPopup.js"></script>
+<!--    <script src="helloworld.js"></script>-->
+    <script>
+        $(document).ready(function () {
+            $('.tasiyici').modal({
+                trigger: 'button'
+
+                });
+            //$('button').click(function () {
+              
+            //    //$('h2').helloWorld({
+            //    //    text: 'Hade Bakalým',
+            //    //    color: '#005dff',
+            //    //    fontStyle: 'italic',
+            //    //    complete: function () { alert('Süpper !') }
+            //    //});
+            //});
+        });
+    </script>
+    <style>
+        /*body {
+
+        }
+        .modal {
+            top:30%;
+            left:40%;
+            opacity:1;
+            visibility:visible;
+            position:absolute;
+            /*width:200px;
+            height:200px;
+            background-color:blue;
+        }
+        .close {
+        visibility:visible;
+        position:absolute;
+        width:15px;
+        height:15px;
+        }
+        #modal {
+        background-color:blue;
+        width:200px;
+        height:200px;
+        }*/
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #666;
+            font-family: arial;
+            overflow-x: hidden;
+            font-size: 12px;
+        }
+
+        .tasiyici {
+            width: 300px;
+            height: 200px;
+            display: none;
+            background: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -150px;
+            margin-top: -100px;
+            z-index: 999;
+            text-shadow: 1px 1px 1px solid #000;
+            border: 1px solid #222;
+        }
+
+            .tasiyici div {
+                position: relative;
+            }
+
+            .tasiyici p {
+                padding: 10px;
+            }
+
+            .tasiyici span {
+                position: absolute;
+                top: 7px;
+                right: 10px;
+                cursor: pointer;
+                z-index: 9999;
+            }
+
+        .sol, .sag {
+            width: 290px;
+            height: 100px;
+            position: absolute;
+            left: 45%;
+            margin-left: -100px;
+            display: block;
+            background: #ffF;
+        }
+
+        .sol {
+            top: 0;
+            margin-top: -150px;
+        }
+
+        .sag {
+            bottom: 0;
+            margin-bottom: -150px;
+        }
+
+        .overlay {
+            background: rgba(0, 0, 0, .7);
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            display: none;
+            z-index: 2;
+        }
+
+        .tasiyici div h1 {
+            margin: 0;
+            padding: 5px 0 5px 15px;
+            background: #ddd;
+            font-size: 14px;
+            border-bottom: 1px solid #ccc;
+            color: #222;
+            text-shadow: 0px 1px 0px rgb(182, 182, 182);
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+    <button>Göster</button>
+    <div class="tasiyici">
+        <div>
+            <h1>Baþlýk</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur tenetur perspiciatis veritatis similique adipisci praesentium explicabo rem ratione delectus quas laborum cum consequatur quos nisi asperiores soluta doloremque! Possimus similique.</p>
+
+
+        </div>
+
+    </div>
+</body>
+</html>
